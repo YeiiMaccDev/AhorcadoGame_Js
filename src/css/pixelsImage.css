@@ -1,0 +1,30 @@
+/* Start: Hangman styles in pixels */
+.parts {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    min-width: 200px;
+    height: 250px;
+}
+
+.parts-blank {
+    background-color: transparent;
+}
+
+.parts-base {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.parts-base, .parts-horizontal, .parts-vertical {
+    background-color: #000;
+}
+
+.show-body {
+    background-color: var(--color-secondary);
+    border: 1px solid #000;
+}
+
+.show-clothes {
+    background-color: var(--color-primary);
+}
+/* End: Hangman styles in pixels */
