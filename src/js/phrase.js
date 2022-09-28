@@ -1,7 +1,8 @@
 import '../css/phrase.css';
 
+const  getKeysLetters = () =>  document.querySelectorAll('.letter');
 
-export const createPhraseToDisplay = (phrase) => {
+const createPhraseToDisplay = (phrase) => {
     const divPhrase = document.getElementById('phrase-container');
     const ulPhrase = document.createElement('ul');
 
@@ -13,7 +14,7 @@ export const createPhraseToDisplay = (phrase) => {
         if (phrase[i] === " ") {
             phraseHTML += `<li class="space"> </li>`;
         } else {
-            phraseHTML += `<li class="hidden letter ">${phrase[i]}</li>`;
+            phraseHTML += `<li class="letter hidden">${phrase[i]}</li>`;
         }
     }
     
@@ -21,4 +22,7 @@ export const createPhraseToDisplay = (phrase) => {
     divPhrase.append(ulPhrase);
 }
 
-
+export {
+    createPhraseToDisplay,
+    getKeysLetters,
+}

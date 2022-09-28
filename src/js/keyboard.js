@@ -1,6 +1,7 @@
 import '../css/keyboard.css';
 
-export const createKeyboard = () => {
+
+const createKeyboard = () => {
     const divPhrase = document.getElementById('phrase-container');
     const divKeyboard = document.createElement('div');
 
@@ -46,4 +47,11 @@ export const createKeyboard = () => {
     divKeyboard.innerHTML = keyboardHTML;
 
     divPhrase.append(divKeyboard.lastElementChild);
+}
+
+const getKeysButtons  = () => document.querySelectorAll('.key');
+
+export {
+    createKeyboard,
+    getKeysButtons,
 }

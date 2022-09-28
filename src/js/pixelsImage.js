@@ -1,6 +1,11 @@
 import '../css/pixelsImage.css';
 
-export const createPixelsImage = () => {
+let partsBody = [];
+
+
+const createPixelsImage = () => {
+    partsBody = ['parts-head', 'parts-shirt', 'parts-pants', 'parts-arm1', 'parts-arm2', 'parts-leg1', 'parts-leg2'];
+    
     const divGameImage = document.getElementById('game-image');
 
     const imagePartsHTML = `
@@ -58,4 +63,23 @@ export const createPixelsImage = () => {
 
     divGameImage.innerHTML = imagePartsHTML;
 
+}
+
+const removeLife = () => {
+    if (!partsBody.length) return false;
+
+    const part = partsBody.shift();
+    const partHTML = document.querySelector(`.${part}`);
+    if (part == 'parts-shirt' || part == 'parts-pants') {
+        partHTML.classList.add('show-clothes');
+    } else {
+        partHTML.classList.add('show-body');
+    }
+    return true;
+}
+
+
+export {
+    createPixelsImage,
+    removeLife,
 }

@@ -18,6 +18,7 @@ li {
     justify-content: center;
     align-items: center;
     width: 100%;
+    max-width: 150px;
     margin: 5px;
     border: 1px solid transparent;
     padding: .2rem .6rem;
@@ -33,17 +34,16 @@ li {
 
 
 .show {
-    color: #fff;
-    background-color: #4ac0d5;
+    color:var(--color-font-letters);
+    background-color: var(--color-box-letters);
     font-size: 20px;
     padding: 15px;
     margin: 2px;
     border-radius: 5px;
-    -webkit-animation-duration: .5s;
-    animation-duration: .5s;
+    transition: all .7s ease;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 768px) {
     .phrase {
         flex-wrap: wrap;
         margin-top: 10px;

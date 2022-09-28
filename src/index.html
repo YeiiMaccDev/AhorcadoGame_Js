@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -12,32 +12,52 @@
     <header class="header">
         <a class="navbar" href="#">
             <img class="header-logo" src="assets/img/webpack-logo.png" alt="logo">
-            <strong>YeiiMaccDev</strong>
+            <strong>YeiiMaccDev </strong> /
+            <strong> Juego el ahorcado</strong>
         </a>
     </header>
     <main>
-        <!-- <section class="start">
-            <div class="buttons">
-                <button class="btn btn-start">Iniciar juego</button>
-                <button class="btn btn-new-phrase">Nueva frase</button>
-            </div>
-        </section> -->
-
-        <section class="game">
-            <div class="game-image" id="game-image">
-               <!-- img || divs pixels image -->
-            </div>
-            <div class="game-phrase">
-                <div class="phrase-container" id="phrase-container">               
-                        <!-- Phrase -->
-                        <!-- Keyboard -->
+        <section class="start" id="start-section">
+            <div class="start-card" id="start-card">
+                <div class="start-message" id="start-message">
+                    <!-- Mensaje fin del juego -->
+                    <h1>Juego el ahorcado</h1>
+                    <p>Desafía a tu mente y descubre la palabra oculta.</p>
+                </div>
+                <div class="buttons">
+                    <button class="btn btn-start" id="btn-start">Iniciar juego</button>
+                    <button class="btn btn-new-phrase" id="btn-new-phrase">Nueva frase</button>
                 </div>
             </div>
         </section>
 
-        <!-- <section class="end">
+        <section class="form-section" id="form-section">
+            <div class="form-phrase">
+                <h1>Nueva frase</h1>
+                <form id="form-new-phrase" method="post">
+                    <input type="text" name="input-phrase" id="input-phrase" class="input-phrase" minlength="4"
+                        maxlength="25" required placeholder="Desarrollo de sofware">
+                    <p class="input-phrase-message" id="input-phrase-message">La nueva frase debe contener entre 4 y 25
+                        caracteres. NO debe contener caracteres especiales.</p>
+                    <button class="btn btn-new-phrase btn-form" id="btn-form-new-phrase">Nueva frase</button>
+                </form>
+                <button class="btn btn-back-home btn-form" id="btn-back-home">Volver a inicio</button>
+            </div>
+        </section>
 
-        </section> -->
+        <section class="game" id="game-section">
+            <div class="game-image" id="game-image">
+                <!-- img || divs pixels image -->
+            </div>
+            <div class="game-phrase">
+                <div class="phrase-container" id="phrase-container">
+                    <!-- Phrase -->
+                    <!-- Keyboard -->
+                </div>
+            </div>
+        </section>
+
+
     </main>
 </body>
 

@@ -22,9 +22,12 @@
 .show-body {
     background-color: var(--color-secondary);
     border: 1px solid #000;
+    transition: all .7s ease;
+
 }
 
 .show-clothes {
     background-color: var(--color-primary);
+    transition: all .7s ease;
 }
 /* End: Hangman styles in pixels */
