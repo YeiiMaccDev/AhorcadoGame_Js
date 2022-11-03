@@ -36,8 +36,7 @@
     align-items: center;
     width: 100%;
     min-height: 75px;
-    background-color: var(--color-primary);
-    /* background-color: var(--color-neutral-light); */
+    background-color: rgba(255, 255, 255, 0.7);
     padding-left: 10px;
 
     position: fixed;
@@ -48,7 +47,7 @@
 .navbar {
     display: flex;
     align-items: center;
-    color: black;
+    color: #000;
     text-decoration: none;
 }
 
